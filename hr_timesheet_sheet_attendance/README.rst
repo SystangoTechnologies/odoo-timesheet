@@ -1,7 +1,3 @@
-.. image:: https://odoo-community.org/readme-banner-image
-   :target: https://odoo-community.org/get-involved?utm_source=readme
-   :alt: Odoo Community Association
-
 =============================
 HR Timesheet Sheet Attendance
 =============================
@@ -17,7 +13,7 @@ HR Timesheet Sheet Attendance
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
     :target: https://odoo-community.org/page/development-status
     :alt: Beta
-.. |badge2| image:: https://img.shields.io/badge/license-AGPL--3-blue.png
+.. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-OCA%2Ftimesheet-lightgray.png?logo=github
@@ -32,12 +28,12 @@ HR Timesheet Sheet Attendance
 
 |badge1| |badge2| |badge3| |badge4| |badge5|
 
-This module extends the functionality of hr_timesheet_sheet and help
+This module extends the functionality of hr_timesheet_sheet and helps
 employees to manage their attendance according to timesheet period. It
-provide functionality to checkin/checkout directly from timesheet-sheet.
-It also help you/management in performace evaluation by displaing total
-attendance time and difference of total attendance time and total
-working time.
+provides functionality to checkin/checkout directly from
+timesheet-sheet. It also helps you/management in performance evaluation
+by displaying total attendance time and difference of total attendance
+time and total working time.
 
 **Table of contents**
 
@@ -49,42 +45,42 @@ Installation
 
 This module relies on:
 
-- The OCA module 'HR Timesheet Sheet', and can be downloaded from
-  Github:
-  https://github.com/OCA/hr-timesheet/tree/15.0/hr_timesheet_sheet
+-  The OCA module 'HR Timesheet Sheet', and can be downloaded from
+   Github:
+   `https://github.com/OCA/hr-timesheet/tree/15.0/hr_timesheet_sheet <https://github.com/OCA/hr-timesheet/tree/15.0/hr_timesheet_sheet>`__
 
 Usage
 =====
 
-- Goto Timesheets > My Timesheet Sheets and create a timesheet
+-  Go to Timesheets > My Timesheet Sheets and create a timesheet
 
-- Goto tab Attendances on timesheet form
+-  Go to tab Attendances on timesheet form
 
-  - You can see there your current status checkin/checkout
-  - You also can create attendance by clicking on button Check In/Check
-    Out on right side
-  - You can see your attendance that belongs to current timesheet on
-    left side in same tab
+   -  You can see there your current status checkin/checkout
+   -  You also can create attendance by clicking on button Check
+      In/Check Out on right side
+   -  You can see your attendance that belongs to current timesheet on
+      left side in same tab
 
-- 'Total Attendance' is total working time based on your attendance
+-  'Total Attendance' is total working time based on your attendance
 
-- 'Difference' is the difference betwwen total attandance time and
-  working time (sum(attendace-time) - sum(unit amount in timessheet
-  lines))
+-  'Difference' is the difference between total attendance time and
+   working time (sum(attendance-time) - sum(unit amount in timesheet
+   lines))
 
-- Two smart buttons are present on top-right corner of timesheet form
+-  Two smart buttons are present on top-right corner of timesheet form
 
-  - First one(with time icon) will take you list of your timesheets (by
-    default filter timesheets related to current timesheet-sheet)
-  - Second one(labeled as Attendances) will take you to list of your
-    attendances (by default filter ateendances related to current
-    timesheet-sheet)
+   -  First one(with time icon) will take you list of your timesheets
+      (by default filter timesheets related to current timesheet-sheet)
+   -  Second one(labeled as Attendances) will take you to list of your
+      attendances (by default filter attendances related to current
+      timesheet-sheet)
 
-- It prevents to change in any attendance related to timesheet-sheet
-  that already has submitted
+-  It prevents changes to any attendance related to timesheet-sheet that
+   already has been submitted
 
-- It also prevents to submit such a timesheet-sheet not having equal
-  number of checkin and checkout
+-  It also prevents to submit such a timesheet-sheet not having equal
+   number of checkin and checkout
 
 Known issues / Roadmap
 ======================
@@ -116,13 +112,13 @@ Authors
 Contributors
 ------------
 
-- Ruchir Shukla <ruchir@bizzappdev.com>
-- Shruti Singh <shruti.singh@bizzappdev.com>
-- Chirag Parmar <chirag.parmar@bizzappdev.com>
-- Naglis Jonaitis <naglis@versada.eu>
-- `Tecnativa <https://www.tecnativa.com>`__:
+-  Ruchir Shukla <ruchir@bizzappdev.com>
+-  Shruti Singh <shruti.singh@bizzappdev.com>
+-  Chirag Parmar <chirag.parmar@bizzappdev.com>
+-  Naglis Jonaitis <naglis@versada.eu>
+-  `Tecnativa <https://www.tecnativa.com>`__:
 
-  - Ernesto Tejeda
+   -  Ernesto Tejeda
 
 Maintainers
 -----------
