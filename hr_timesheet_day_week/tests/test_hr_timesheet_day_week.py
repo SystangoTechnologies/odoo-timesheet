@@ -3,6 +3,8 @@
 
 from datetime import date, timedelta
 
+from lxml import etree
+
 from odoo.addons.base.tests.common import BaseCommon
 
 
@@ -42,3 +44,27 @@ class TestHrTimesheetDayWeek(BaseCommon):
     def test_02_week_day_report(self):
         timesheet_rpt = self.env["timesheets.analysis.report"].browse([])
         self.assertTrue(timesheet_rpt._select(), "A.day_week AS day_week")
+
+    def test_03_weekend_filter_and_decoration(self):
+        """Weekend filter and yellow highlight are Saturday and Sunday only."""
+        weekend = "['5', '6']"
+        weekdays = "['0', '1']"
+        search = self.env["account.analytic.line"].get_view(
+            view_id=self.env.ref("hr_timesheet.hr_timesheet_line_search").id,
+            view_type="search",
+        )
+        search_doc = etree.XML(search["arch"])
+        weekend_filter = search_doc.xpath("//filter[@name='day_week']")
+        self.assertEqual(len(weekend_filter), 1)
+        self.assertEqual(weekend_filter[0].get("string"), "Weekend")
+        self.assertIn(weekend, weekend_filter[0].get("domain"))
+        self.assertNotIn(weekdays, weekend_filter[0].get("domain"))
+
+        tree = self.env["account.analytic.line"].get_view(
+            view_id=self.env.ref("hr_timesheet.hr_timesheet_line_tree").id,
+            view_type="list",
+        )
+        tree_doc = etree.XML(tree["arch"])
+        decoration = tree_doc.xpath("//list")[0].get("decoration-warning")
+        self.assertIn(weekend, decoration)
+        self.assertNotIn(weekdays, decoration)
