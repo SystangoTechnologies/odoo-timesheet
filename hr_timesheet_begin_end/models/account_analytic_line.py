@@ -21,7 +21,7 @@ class AccountAnalyticLine(models.Model):
             value_to_html = self.env["ir.qweb.field.float_time"].value_to_html
             start = timedelta(hours=line.time_start)
             stop = timedelta(hours=line.time_stop)
-            if stop > start:
+            if stop < start:
                 value_to_html(line.time_start, None)
                 value_to_html(line.time_stop, None)
 
