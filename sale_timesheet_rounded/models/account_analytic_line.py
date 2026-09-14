@@ -24,7 +24,7 @@ class AccountAnalyticLine(models.Model):
             self.env.remove_to_compute(field_rounded, self)
         return super()._compute_project_id()
 
-    @api.depends("project_id")
+    @api.depends("project_id", "unit_amount")
     def _compute_unit_rounded(self):
         for record in self:
             record.unit_amount_rounded = record._calc_unit_amount_rounded()
