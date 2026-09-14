@@ -2,6 +2,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl)
 import odoo
 from odoo import fields
+from odoo.tests import Form
 
 from odoo.addons.sale_timesheet.tests.common import TestCommonSaleTimesheet
 
@@ -112,6 +113,40 @@ class TestRounded(TestCommonSaleTimesheet):
         self.assertEqual(line.unit_amount_rounded, 4.0)
         line.unit_amount = 5.0
         self.assertEqual(line.unit_amount_rounded, 10.0)
+
+    def test_ts04_quantity_rounded_follows_hours_spent(self):
+        """TS-04: Quantity Rounded must track Hours Spent changes immediately."""
+        self.project_global.write(
+            {
+                "timesheet_rounding_unit": 0.25,
+                "timesheet_rounding_method": "UP",
+                "timesheet_rounding_factor": 100,
+            }
+        )
+        hours_01_10 = 1 + 10 / 60.0
+        line = self.create_analytic_line(unit_amount=hours_01_10)
+        self.assertAlmostEqual(line.unit_amount_rounded, 1.25)
+        line.write({"unit_amount": 2.0})
+        self.assertAlmostEqual(line.unit_amount_rounded, 2.0)
+
+    def test_ts04_quantity_rounded_form_ui(self):
+        """TS-04 UI: form edit updates Quantity Rounded before save."""
+        self.project_global.write(
+            {
+                "timesheet_rounding_unit": 0.25,
+                "timesheet_rounding_method": "UP",
+                "timesheet_rounding_factor": 100,
+            }
+        )
+        hours_01_10 = 1 + 10 / 60.0
+        line = self.create_analytic_line(unit_amount=hours_01_10)
+        form = Form(
+            line,
+            view=self.env.ref("hr_timesheet.hr_timesheet_line_form"),
+        )
+        self.assertAlmostEqual(form.unit_amount_rounded, 1.25)
+        form.unit_amount = 2.0
+        self.assertAlmostEqual(form.unit_amount_rounded, 2.0)
 
     def test_analytic_line_read_group_override(self):
         # Test of the read group with an without timesheet_rounding context
