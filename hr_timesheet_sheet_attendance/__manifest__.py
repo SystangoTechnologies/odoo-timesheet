@@ -1,6 +1,7 @@
 {
     "name": "HR Timesheet Sheet Attendance",
     "version": "18.0.1.0.3",
+    "summary": "This module extends the functionality of hr_timesheet_sheet and helps employees to manage their attendance according to timesheet period.",
     "category": "Human Resources",
     "sequence": 80,
     "license": "AGPL-3",
