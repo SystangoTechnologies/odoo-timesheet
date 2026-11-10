@@ -9,6 +9,7 @@
 {
     "name": "CRM Timesheet",
     "category": "Customer Relationship Management",
+    "summary": "This module allows to generate timesheets from leads/opportunities.",
     "version": "18.0.1.0.1",
     "depends": ["crm", "project_timesheet_time_control"],
     "data": [
