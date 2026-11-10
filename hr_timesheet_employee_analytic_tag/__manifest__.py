@@ -3,6 +3,7 @@
 {
     "name": "Hr Timesheet Employee Analytic Tag",
     "version": "18.0.1.0.0",
+    "summary": "This module allows to define analytical labels in employees to be set when creating analytical items.",
     "category": "Timesheet",
     "website": "https://github.com/OCA/timesheet",
     "author": "Tecnativa, Odoo Community Association (OCA)",
