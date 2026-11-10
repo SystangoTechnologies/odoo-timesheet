@@ -77,8 +77,7 @@ class HrAttendance(models.Model):
         if timesheet and timesheet.state != "draft":
             raise UserError(
                 _(
-                    "You can not enter an attendance in a submitted timesheet. "
-                    + "Ask your manager to reset it before adding attendance."
+                    "You can not enter an attendance in a submitted timesheet. Ask your manager to reset it before adding attendance."
                 )
             )
         else:
@@ -97,7 +96,6 @@ class HrAttendance(models.Model):
             ):
                 raise UserError(
                     _(
-                        "You can not enter an attendance date "
-                        + "outside the current timesheet dates."
+                        "You can not enter an attendance date outside the current timesheet dates."
                     )
                 )
