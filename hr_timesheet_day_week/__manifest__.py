@@ -4,6 +4,7 @@
 {
     "name": "Timesheets - Day of Week",
     "category": "Human Resources",
+    "summary": "For timesheets, enables search, group by the day of the week.",
     "version": "18.0.1.0.0",
     "depends": ["hr_timesheet"],
     "data": ["views/hr_timesheet_view.xml", "report/timesheets_analysis_report.xml"],
