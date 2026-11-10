@@ -85,8 +85,7 @@ class HrTimesheetSheet(models.Model):
                 continue
             raise UserError(
                 _(
-                    "The timesheet cannot be validated as it does "
-                    + "not contain an equal number of sign ins and sign outs."
+                    "The timesheet cannot be validated as it does not contain an equal number of sign ins and sign outs."
                 )
             )
 
