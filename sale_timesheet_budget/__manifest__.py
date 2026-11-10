@@ -3,6 +3,7 @@
 {
     "name": "Sale timesheet budget",
     "version": "18.0.1.0.0",
+    "summary": "This module adds the Budget tab to the projects/sales orders to be able to set some additional lines linked to a planned budget.",
     "category": "Timesheet",
     "website": "https://github.com/OCA/timesheet",
     "author": "Tecnativa, Odoo Community Association (OCA)",
