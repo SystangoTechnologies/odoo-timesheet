@@ -47,7 +47,7 @@ This module relies on:
 
 -  The OCA module 'HR Timesheet Sheet', and can be downloaded from
    Github:
-   `https://github.com/OCA/hr-timesheet/tree/15.0/hr_timesheet_sheet <https://github.com/OCA/hr-timesheet/tree/15.0/hr_timesheet_sheet>`__
+   https://github.com/OCA/hr-timesheet/tree/15.0/hr_timesheet_sheet
 
 Usage
 =====
