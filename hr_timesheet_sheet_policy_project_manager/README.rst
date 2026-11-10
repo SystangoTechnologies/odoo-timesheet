@@ -1,7 +1,3 @@
-.. image:: https://odoo-community.org/readme-banner-image
-   :target: https://odoo-community.org/get-involved?utm_source=readme
-   :alt: Odoo Community Association
-
 ==========================================
 HR Timesheet Sheet: Project Manager Policy
 ==========================================
@@ -17,7 +13,7 @@ HR Timesheet Sheet: Project Manager Policy
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
     :target: https://odoo-community.org/page/development-status
     :alt: Beta
-.. |badge2| image:: https://img.shields.io/badge/license-AGPL--3-blue.png
+.. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-OCA%2Ftimesheet-lightgray.png?logo=github
@@ -32,7 +28,7 @@ HR Timesheet Sheet: Project Manager Policy
 
 |badge1| |badge2| |badge3| |badge4| |badge5|
 
-This module allows setting Department Manager as Reviewer on Timesheet
+This module allows setting Project Manager as Reviewer on Timesheet
 Sheets.
 
 **Table of contents**
@@ -49,11 +45,11 @@ Review Policy and select the option "By Project Manager".
 Usage
 =====
 
-- The "Project" field is added to the Timesheet Sheets.
-- The records that will be created in the sheets will be filtered by the
-  defined project.
-- The possible reviewers will also be the Project Managers of the
-  corresponding project.
+-  The "Project" field is added to the Timesheet Sheets.
+-  The records that will be created in the sheets will be filtered by
+   the defined project.
+-  The possible reviewers will also be the Project Managers of the
+   corresponding project.
 
 Bug Tracker
 ===========
@@ -76,9 +72,9 @@ Authors
 Contributors
 ------------
 
-- `CorporateHub <https://corporatehub.eu/>`__
+-  `CorporateHub <https://corporatehub.eu/>`__
 
-  - Alexey Pelykh <alexey.pelykh@corphub.eu>
+   -  Alexey Pelykh <alexey.pelykh@corphub.eu>
 
 Maintainers
 -----------
