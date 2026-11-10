@@ -3,6 +3,7 @@
 {
     "name": "HR Timesheet Time Control begin/end",
     "version": "18.0.1.0.0",
+    "summary": "This module adds begin and end time to analytic line, similar to hr_timesheet_begin_end but integrated with time control.",
     "category": "Project",
     "author": "glueckkanja AG, Odoo Community Association (OCA)",
     "maintainers": ["CRogos"],
