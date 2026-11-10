@@ -4,6 +4,7 @@
 {
     "name": "Timesheet - Autofill project off",
     "version": "18.0.1.0.0",
+    "summary": "Disables automatic filling of the project field based on previous entries on timesheets.",
     "author": "Innovara, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "category": "Human Resources",
