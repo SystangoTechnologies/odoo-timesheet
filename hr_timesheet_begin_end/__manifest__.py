@@ -5,6 +5,7 @@
 {
     "name": "Timesheet - Begin/End Hours",
     "version": "18.0.1.0.2",
+    "summary": "Adds starting and ending hours fields on the timesheet activities.",
     "author": "Camptocamp, Tecnativa, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "category": "Human Resources",
