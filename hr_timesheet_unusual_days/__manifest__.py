@@ -2,6 +2,7 @@
 {
     "name": "HR Timesheet Calendar Unusual Days",
     "version": "18.0.1.0.0",
+    "summary": "Display weekends and holidays in a different background color.",
     "category": "Human Resources",
     "website": "https://github.com/OCA/timesheet",
     "author": "glueckkanja AG, Odoo Community Association (OCA)",
