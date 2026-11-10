@@ -3,6 +3,7 @@
 {
     "name": "HR Timesheet Type Non Billable",
     "version": "18.0.1.0.0",
+    "summary": "Configure timesheet types that are not billable to clients and won't affect project remaining time computation.",
     "category": "Timesheet",
     "website": "https://github.com/OCA/timesheet",
     "author": "APSL-Nagarro, Odoo Community Association (OCA)",

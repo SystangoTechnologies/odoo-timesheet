@@ -3,6 +3,7 @@
 {
     "name": "HR Timesheet Calendar",
     "version": "18.0.1.1.0",
+    "summary": "This module allows you to have the calendar view to show or perform time imputation.",
     "category": "Human Resources",
     "website": "https://github.com/OCA/timesheet",
     "author": "Lansana Barry Sow, APSL-Nagarro, Odoo Community Association (OCA)",

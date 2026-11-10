@@ -4,6 +4,7 @@
 {
     "name": "Dates planning in sales order lines",
     "version": "18.0.1.0.0",
+    "summary": "This module allows to plan in advance the start/end dates and assignees for the sales order lines that are services.",
     "category": "Services/Project",
     "website": "https://github.com/OCA/timesheet",
     "author": "Tecnativa, Odoo Community Association (OCA)",
